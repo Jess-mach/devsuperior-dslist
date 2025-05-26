@@ -16,12 +16,12 @@ API REST desenvolvida com Spring Boot para gerenciamento de jogos e listas de jo
 
 ## Tecnologias Utilizadas
 
-- **Java**: 17+
+- **Java**: 21+
 - **Spring Boot**: 3.x
 - **Spring Web**: Para criação da API REST
 - **Spring Data JPA**: Para persistência de dados
 - **Jakarta Persistence API**: Para mapeamento objeto-relacional
-- **Banco de Dados**: PostgreSQL/H2 (configurável)
+- **Banco de Dados**: MySQL/H2 (TESTE)
 
 ## Instalação e Configuração
 
@@ -29,38 +29,8 @@ API REST desenvolvida com Spring Boot para gerenciamento de jogos e listas de jo
 
 - Java 17 ou superior
 - Maven 3.6+
-- PostgreSQL (ou H2 para desenvolvimento)
+- MySQL (ou H2 para desenvolvimento)
 
-### Configuração do Ambiente
-
-1. **Clone o repositório**
-```bash
-git clone https://github.com/seu-usuario/dslist-api.git
-cd dslist-api
-```
-
-2. **Configure o banco de dados**
-
-Edite o arquivo `application.properties` ou `application.yml`:
-
-```properties
-# PostgreSQL (Produção)
-spring.datasource.url=jdbc:postgresql://localhost:5432/dslist
-spring.datasource.username=seu_usuario
-spring.datasource.password=sua_senha
-spring.jpa.hibernate.ddl-auto=update
-
-# H2 (Desenvolvimento - opcional)
-# spring.datasource.url=jdbc:h2:mem:testdb
-# spring.h2.console.enabled=true
-```
-
-3. **Execute a aplicação**
-```bash
-mvn spring-boot:run
-```
-
-A API estará disponível em `http://localhost:8080`
 
 ## Documentação da API
 
